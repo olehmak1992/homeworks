@@ -1,0 +1,57 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #626262;
+  background-color: #ffffff;
+  line-height: 24px;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-list a {
+  color: #626262;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.minititle {
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.lifestyle h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.photodiary h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.load-more {
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+}
