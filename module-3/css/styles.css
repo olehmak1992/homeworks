@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Playfair Display", serif;
   font-size: 14px;
@@ -5,6 +15,31 @@ body {
   background-color: #ffffff;
   line-height: 24px;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 902px;
+  margin: 0 auto;
+}
+
+.page-nav {
+  padding-top: 77px;
+  padding-bottom: 98px;
+}
+
+.menu-list-item {
+  display: inline-block;
+}
+
+.menu-list li:not(:last-child) {
+  margin-right: 123px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -25,12 +60,56 @@ input[type="radio"].visually-hidden {
 
 .menu-list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .menu-list a {
+  display: block;
   color: #626262;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+  color: #03a9f4;
+}
+
+.features {
+  padding: 0;
+  margin: 0;
+  font-size: 0px;
+}
+
+.features-item img {
+  margin-bottom: 30px;
+}
+
+.features-item {
+  margin-right: 60px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  width: 421px;
+  display: inline-block;
+}
+
+.lifestyle {
+  margin-bottom: 130px;
+}
+
+.text-item {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.features-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .minititle {
@@ -38,6 +117,14 @@ input[type="radio"].visually-hidden {
   color: #b4ad9e;
   line-height: 17px;
   text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.features-item h2 {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 36px;
 }
 
 .lifestyle h2 {
@@ -49,9 +136,23 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 36px;
 }
-
+.main {
+  margin-bottom: 84px;
+}
+.footer {
+  text-align: center;
+  padding-bottom: 22px;
+}
 .load-more {
+  border: none;
+  padding: 22px 34px;
+  margin: 0px;
   font-size: 20px;
   line-height: 24px;
-  color: #626262;
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  color: rgb(98, 98, 98);
+  cursor: pointer;
+  background-color: #ffffff;
 }
