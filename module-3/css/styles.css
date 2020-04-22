@@ -82,6 +82,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   font-size: 0px;
+  background-color: chartreuse;
 }
 
 .features-item img {
@@ -96,6 +97,7 @@ input[type="radio"].visually-hidden {
   padding: 0px;
   width: 421px;
   display: inline-block;
+  background-color: blueviolet;
 }
 
 .lifestyle {
