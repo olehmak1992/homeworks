@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #555252;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* Wrapper */
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* Header with site navigation */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.nav {
+  padding-top: 38px;
+  padding-bottom: 96px;
+}
+
+.site-logo {
+  display: block;
+  float: left;
+}
+
+.list-nav {
+  list-style: none;
+  font-size: 14px;
+  line-height: 17px;
+  float: right;
+  margin-top: 2px;
+}
+
+.list-nav a {
+  font-family: "Open Sans";
+  color: #0f0101;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list-item {
+  float: left;
+}
+
+/* Header pseudoclasses and pseudoelements*/
+
+.list-nav a:hover,
+.list-nav a:focus {
+  color: #1abc9c;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+/* Section Features products  */
+
+.section-title {
+  font-family: "Roboto Black";
+  font-weight: bold;
+  color: #515151;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 92px;
+  text-align: center;
+}
+
+.image-box {
+  width: 255px;
+  height: 282px;
+  background-color: rgb(233, 240, 253);
+  text-align: center;
+  line-height: 283px;
+}
+
+.features-image {
+  display: inline;
+  vertical-align: middle;
+}
+
+.features-list {
+  font-family: "Roboto Black";
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  list-style: none;
+}
+
+.features-list-item {
+  float: left;
+}
+
+.features-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.features-desc {
+  color: #ffffff;
+}
+
+.features-list p {
+  margin: 0;
+}
+
+.features-name {
+  background-color: #323232;
+  float: left;
+  width: 201px;
+  padding: 0 14px;
+}
+
+.features-value {
+  background-color: #8c8c8c;
+  float: right;
+  width: 54px;
+  text-align: center;
+}
+
+.section-features {
+  margin-bottom: 98px;
+}
+
+/* Sections pseudoclasses and pseudoelements*/
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 24px auto 0;
+}
+
+.features-list-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.features-list-item:nth-of-type(-n + 4) {
+  margin-bottom: 30px;
+}
+
+.features-link:hover .features-name,
+.features-link:focus .features-name {
+  background: #1abc9c;
+}
+
+.features-link:hover .features-value,
+.features-link:focus .features-value {
+  background: #7fd9c7;
+}
+
+/* Section News*/
+
+.section-news {
+  margin-bottom: 80px;
+}
+
+.section-news h2 {
+  margin-bottom: 80px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-list-item {
+  width: 350px;
+  float: left;
+}
+
+.news-image {
+  margin: 0 auto 8px;
+}
+
+.news-item-title {
+  font-size: 18px;
+  font-weight: 600px;
+  line-height: 26px;
+}
+
+.news-list-item p {
+  margin-bottom: 20px;
+}
+
+.news-list-item button {
+  border: none;
+  padding: 16px 42px;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgb(78, 198, 171);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+/* Sections pseudoclasses and pseudoelements*/
+
+.news-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.news-item-title::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 3px;
+  margin: 10px 0 24px 0px;
+  background-color: #4ec6ab;
+}

@@ -1,99 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework4</title>
-  </head>
-  <body>
-    <header>
-      <h1>Mart</h1>
-      <nav class="navigation">
-        <ul class="list-navigation">
-          <li class="list-item">Home</li>
-          <li class="list-item">About Us</li>
-          <li class="list-item">Page</li>
-          <li class="list-item">Shop</li>
-          <li class="list-item">Blog</li>
-          <li class="list-item">Contact Us</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="features">
-        <h2>FEATURED PRODUCTS</h2>
-        <ul class="features-list">
-          <li class="features-list-item">
-            <img
-              class="features-list-image" src="#" alt="image" width="255px" height="282px"/>
-            <h3>Blue Tshirt</h3>
-            <span>&#36 26</span>
-          </li>
-          <li class="features-list-item">
-            <img class="features-list-image" src="#" alt="image" width="255px" height="282px"/>
-            <h3>Blue Tshirt</h3>
-            <span>&#36 21</span>
-          </li>
-          <li class="features-list-item">
-            <img class="features-list-image" src="#" alt="image" width="255px" height="282px"/>
-            <h3>WOMAN shirt</h3>
-            <span>&#36 31</span>
-          </li>
-          <li class="features-list-item">
-            <img class="features-list-image" src="#" alt="image" width="255px" height="282px"/>
-            <h3>YELLOW Tshirt</h3>
-            <span>&#36 56</span>
-          </li>
-          <li class="features-list-item">
-            <img class="features-list-image" src="#" alt="image" width="255px" height="282px"/>
-            <h3>Cool lingerie</h3>
-            <span>&#36 26</span>
-          </li>
-          <li class="features-list-item">
-            <img class="features-list-image" src="#" alt="image" width="255px" height="282px" />
-            <h3>Blue Tshirt</h3>
-            <span>&#36 21</span>
-          </li>
-          <li class="features-list-item">
-            <img class="features-list-image" src="#" alt="image" width="255px" height="282px" />
-            <h3>WOMAN shirt</h3>
-            <span>&#36 31</span>
-          </li>
-          <li class="features-list-item">
-            <img class="features-list-image" src="#" alt="image" width="255px" height="282px" />
-            <h3>YELLOW Tshirt</h3>
-            <span>&#36 56</span>
-          </li>
-        </ul>
-      </section>
-      <section class="news">
-        <h2 class="section-news-title">Latest news</h2>
-        <ul class="news-list">  
-          <li class="news-list-item">             
-              <img class="news-image" src="#" alt="img">
-              <h3 class="news-item-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
-              <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-        ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare</p>
-              <button>Read More</button>
-          </li>
-          <li class="news-list-item">
-            <img class="news-image" src="#" alt="img">
-            <h3 class="news-item-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
-            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
-                accumsan
-                ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare</p>
-            <button>Read More</button>
-          </li>
-          <li class="news-list-item">
-            <img class="news-image" src="#" alt="img" width="350" height="262">
-            <h3 class="news-item-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
-            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
-                accumsan
-                ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare</p>
-            <button>Read More</button>
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700,900"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>homework4</title>
+</head>
+
+<body>
+  <h1 class="visually-hidden">My page</h1>
+
+  <!-- Header with navigation -->
+
+  <header class="page-header container">
+    <nav class="nav clearfix">
+      <a class="site-logo" href="#">
+        <img src="./img/site-logo.png" alt="site-logo" width="78" height="21">
+      </a>
+      <ul class="list-nav clearfix">
+        <li class="list-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="list-item">
+          <a href="#">About Us</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Page</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Shop</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+
+  <main class="container">
+
+    <!-- Features Products section-->
+
+    <section class="section-features">
+      <h2 class="section-title">FEATURED PRODUCTS</h2>
+
+      <!-- Product cards -->
+
+      <ul class="features-list clearfix">
+
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product1.png" alt="image" />
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Women shoes</p>
+              <p class="features-value">&#36 26</p>
+            </div>
+          </a>
+        </li>
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product2.png" alt="image" />
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Beige belt</p>
+              <p class="features-value">&#36 21</p>
+            </div>
+          </a>
+        </li>
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product3.png" alt="image">
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Mens hat</p>
+              <p class="features-value">&#36 31</p>
+            </div>
+          </a>
+        </li>
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product4.png" alt="image" />
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Blue handbag</p>
+              <p class="features-value">&#36 56</p>
+            </div>
+          </a>
+        </li>
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product5.png" alt="image" />
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Black handbag</p>
+              <p class="features-value">&#36 26</p>
+            </div>
+          </a>
+        </li>
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product6.png" alt="image" />
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Black belt</p>
+              <p class="features-value">&#36 21</p>
+            </div>
+          </a>
+        </li>
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product7.png" alt="image" />
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Mens shoes</p>
+              <p class="features-value">&#36 31</p>
+            </div>
+          </a>
+        </li>
+        <li class="features-list-item">
+          <a href="#" class="features-link">
+            <div class="image-box">
+              <img class="features-image" src="./img/product8.png" alt="image" />
+            </div>
+            <div class="features-desc clearfix">
+              <p class="features-name">Glasses</p>
+              <p class="features-value">&#36 56</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- News section -->
+
+    <section class="section-news">
+      <h2 class="section-title">Latest news</h2>
+
+      <!-- Blogs list -->
+
+      <ul class="news-list clearfix">
+        <li class="news-list-item">
+          <img class="news-image ipad" src="./img/ipad.jpg" alt="ipad" width="350" height="261">
+          <h3 class="news-item-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
+          <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+            accumsan
+            ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare</p>
+          <button>Read More</button>
+        </li>
+        <li class="news-list-item">
+          <img class="news-image girls" src="./img/two_girls.jpg" alt="girls" width="347" height="261">
+          <h3 class="news-item-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
+          <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+            accumsan
+            ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare</p>
+          <button>Read More</button>
+        </li>
+        <li class="news-list-item">
+          <img class="news-image bus" src="./img/bus.jpg" alt="bus" width="347" height="262">
+          <h3 class="news-item-title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
+          <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+            accumsan
+            ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare</p>
+          <button>Read More</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
 </html>
