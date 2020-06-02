@@ -149,13 +149,13 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-ctrl-prev {
-    background-image: url(/module-5/img/prev.png);
+    background-image: url(../img/prev.png);
     float: left;
     margin-right: 82px;
 }
 
 .slider-ctrl-next {
-    background-image: url(/module-5/img/next.png);
+    background-image: url(../img/next.png);
     float: right;
 }
 
@@ -274,15 +274,15 @@ input[type="radio"].visually-hidden {
 }
 
 .like {
-    background-image: url(/module-5/img/like.png);
+    background-image: url(../img/like.png);
 }
 
 .arrows {
-    background-image: url(/module-5/img/arrows.png);
+    background-image: url(../img/arrows.png);
 }
 
 .clock {
-    background-image: url(/module-5/img/clock.png);
+    background-image: url(../img/clock.png);
 }
 
 .add-to {
@@ -294,7 +294,7 @@ input[type="radio"].visually-hidden {
     width: 166px;
     clear: both;
     background-color: #323232;
-    background-image: url(/module-5/img/add-to.png);
+    background-image: url(../img/add-to.png);
     background-position: 6%;
     padding-left: 34px;
 }
