@@ -61,6 +61,7 @@ input[type="radio"].visually-hidden {
 .site-logo {
     display: block;
     animation: logo-appear 0.5s linear;
+    margin-top: 30px;
 }
 
 @keyframes logo-appear {
@@ -77,7 +78,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     min-height: 80px;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .list-nav {
@@ -323,19 +324,19 @@ input[type="radio"].visually-hidden {
 }
 
 .facebook {
-    background-image: url(/module-6/img/facebook.png);
+    background-image: url(../img/facebook.png);
 }
 
 .twitter {
-    background-image: url(/module-6/img/twitter.png);
+    background-image: url(../img/twitter.png);
 }
 
 .pinterest {
-    background-image: url(/module-6/img/pinterest.png);
+    background-image: url(../img/pinterest.png);
 }
 
 .instagram {
-    background-image: url(/module-6/img/instagram.png);
+    background-image: url(../img/instagram.png);
 }
 
 .card-desc {
@@ -350,6 +351,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-items: center;
     padding: 11px 0 11px;
+    border-top: 1px solid #e5e5e5;
 }
 
 .copyrights-wrapper {
@@ -364,20 +366,24 @@ input[type="radio"].visually-hidden {
     color: #f38181;
 }
 
-.input-wrapper {
+.subscribe-form {
     display: flex;
 }
 
 .email-input {
-    color: #cccccc;
-    font-weight: lighter;
-    font-style: italic;
+    border: 0;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(231, 231, 231);
-    background-color: rgb(255, 255, 255);
     padding: 10px 10px;
     min-width: 230px;
+}
+
+.email-input::placeholder {
+    color: #cccccc;
+    font-weight: lighter;
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
 }
 
 .subscribe-button {
