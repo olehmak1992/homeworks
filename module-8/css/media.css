@@ -1,6 +1,12 @@
-@media (max-width: 747px) {
-    .wrapper {
+@media (max-width: 767px) {
+    .header-wrapper {
         min-height: 540px;
+        padding-top: 20px;
+        padding-bottom: 138px;
+    }
+
+    .container {
+        width: 320px;
     }
 
     /* Header */
@@ -10,8 +16,21 @@
         margin-bottom: 115px;
     }
 
+    .promo-title {
+        margin-bottom: 14px;
+    }
+
+    .promo-desc {
+        margin-bottom: 18px;
+    }
+
     .header {
         margin-bottom: 34px;
+    }
+
+    .find-partner-btn {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     /* Section partners  */
@@ -25,6 +44,10 @@
         margin-bottom: 18px;
     }
 
+    .partners-list {
+        margin-bottom: 28px;
+    }
+
     .partners-item {
         width: 236px;
         margin: 0 auto;
@@ -33,10 +56,16 @@
     .partners-item:not(:last-child) {
         margin-bottom: 18px;
     }
+
+    .see-partner-btn {
+        max-width: 100%;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
 
-@media (min-width: 750px) {
-    .wrapper {
+@media (min-width: 768px) {
+    .header-wrapper {
         min-height: 700px;
         padding-top: 38px;
         padding-bottom: 235px;
@@ -62,6 +91,7 @@
 
     .promo-title {
         font-size: 52px;
+        margin-bottom: 42px;
     }
 
     .promo-desc {
@@ -106,9 +136,15 @@
     .partners-item-four {
         order: 4;
     }
+
+    .see-partner-btn {
+        max-width: 50%;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
 }
 
-@media (min-width: 748px) and (max-width: 943px) {
+@media (min-width: 768px) and (max-width: 959px) {
 
     .container {
         width: 748px;
@@ -127,7 +163,6 @@
     /* Section promo  */
 
     .promo-title {
-        margin-bottom: 42px;
         padding-left: 122px;
         padding-right: 122px;
     }
@@ -156,20 +191,12 @@
         margin-bottom: 38px;
     }
 
-    .see-partner-btn {
-        max-width: 50%;
-        padding-left: 28px;
-        padding-right: 28px;
-    }
-
 }
 
-@media (min-width: 944px) {
+@media (min-width: 960px) {
 
     .container {
-        width: 944px;
-        padding-left: 2px;
-        padding-right: 2px;
+        width: 940px;
     }
 
     /* Section promo  */

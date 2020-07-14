@@ -98,20 +98,19 @@ input[type="radio"].visually-hidden {
     border: 0;
 }
 
-/* Banner */
+/* Header-wrapper */
 
-.wrapper {
+.header-wrapper {
     background-image: url(../img/banner.png),
         linear-gradient(rgba(26, 25, 21, 0.8), rgba(26, 25, 21, 0.8));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 20px;
-    padding-bottom: 138px;
 }
 
 .container {
-    width: 320px;
+    min-width: 320px;
+    max-width: 944px;
     margin: 0 auto;
 }
 
@@ -162,7 +161,6 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 14px;
 }
 
 .promo-desc {
@@ -171,7 +169,6 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
     text-align: center;
     padding: 0 50px;
-    margin-bottom: 18px;
 }
 
 .find-partner-btn {
@@ -188,8 +185,6 @@ input[type="radio"].visually-hidden {
     max-width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -209,10 +204,6 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     color: #333333;
     text-align: center;
-}
-
-.partners-list {
-    margin-bottom: 28px;
 }
 
 .partners-item {
@@ -285,8 +276,8 @@ input[type="radio"].visually-hidden {
     border: 2px solid #ff4e50;
     border-radius: 20px;
     background: transparent;
-    max-width: 100%;
-    padding: 10px 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0 auto;
     cursor: pointer;
 }
