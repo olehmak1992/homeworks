@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    /* IE9 Compat Modes */
+    src: local("Roboto Light"), local("Roboto-Light"),
+        /* IE6-IE8 */
+        url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"),
+        /* IE6-IE8 */
+        url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    /* IE9 Compat Modes */
+    src: local("Montserrat Regular"), local("Montserrat-Regular"),
+        /* IE6-IE8 */
+        url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    /* IE9 Compat Modes */
+    src: local("Montserrat Bold"), local("Montserrat-Bold"),
+        /* IE6-IE8 */
+        url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #666666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+/* Banner */
+
+.wrapper {
+    background-image: url(../img/banner.png),
+        linear-gradient(rgba(26, 25, 21, 0.8), rgba(26, 25, 21, 0.8));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 138px;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.regist-list {
+    display: flex;
+}
+
+.regist-item {
+    list-style: none;
+}
+
+.regist-link {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    display: block;
+    padding: 7px 18px;
+}
+
+.regist-link:hover,
+.regist-link:focus {
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+.site-logo {
+    display: block;
+}
+
+.site-logo img {
+    margin: 0 auto;
+}
+
+/* Section promo */
+
+.promo-title {
+    font-family: "Montserrat";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.promo-desc {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 18px;
+}
+
+.find-partner-btn {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    border: none;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    background: #ff4e50;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.find-partner-btn:hover,
+.find-partner-btn:focus {
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+/* Section partners */
+
+.partners-title {
+    font-family: "Montserrat";
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+}
+
+.partners-list {
+    margin-bottom: 28px;
+}
+
+.partners-item {
+    text-align: center;
+    list-style: none;
+}
+
+.partners-item-wrap {
+    margin: 0 auto 20px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.partners-item-wrap img {
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.partners-item-wrap::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.image-wrap-one::after {
+    background-image: url(../img/icons/icon1.png);
+    background-color: rgb(255, 78, 80);
+}
+
+.image-wrap-two::after {
+    background-image: url(../img/icons/icon2.png);
+    background-color: rgb(255, 165, 7);
+}
+
+.image-wrap-three::after {
+    background-image: url(../img/icons/icon3.png);
+    background-color: rgb(28, 215, 173);
+}
+
+.image-wrap-four::after {
+    background-image: url(../img/icons/icon4.png);
+    background-color: rgb(78, 115, 219);
+}
+
+.partners-name {
+    font-family: "Montserrat";
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.see-partner-btn {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ff4e50;
+    display: block;
+    border: none;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    background: transparent;
+    max-width: 100%;
+    padding: 10px 70px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.see-partner-btn:hover,
+.see-partner-btn:focus {
+    border: 2px solid #ff4e50;
+    background: #ff4e50;
+    color: #ffffff;
+    outline: none;
+}
