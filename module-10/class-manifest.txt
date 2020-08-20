@@ -1,0 +1,53 @@
+link
+
+list
+
+wrapper wrapper__header wrapper__header--bird
+
+container
+
+page-header
+
+page-nav
+
+site-logo
+site-logo__img
+
+site-navigation
+site-navigation__item
+site-navigation__link
+
+
+
+
+section-pretitle
+section-title
+
+
+
+services
+services__list
+services__item 
+services__icon 
+  services__icon--photography
+  services__icon--web-design
+  services__icon--creativity
+  services__icon--seo
+  services__icon--css-html
+  services__icon--digital
+services__item-title
+services__item-text
+
+
+team
+team__desc
+team__list
+team__photo-wrapper
+team__photo
+team__overlay
+team__socials-wpapper or socials-wpapper
+team__socials-link
+team__socials-icon
+team__socials-icon--facebook
+team__item-name
+team__item-occupation
